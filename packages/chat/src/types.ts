@@ -2112,8 +2112,13 @@ export interface ModalCloseResponse {
   action: "close";
 }
 
+export interface ModalClearResponse {
+  action: "clear";
+}
+
 export type ModalResponse =
   | ModalCloseResponse
+  | ModalClearResponse
   | ModalErrorsResponse
   | ModalUpdateResponse
   | ModalPushResponse;
